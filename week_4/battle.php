@@ -21,8 +21,14 @@
 
 $conn = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e15cdf","acsm_253596416cc65a9");
 
+if (mysqli_connect_errno()){
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}else{
+    echo "working\r";
+}
+
 $sql = "SELECT firstName FROM superheros";
-$result = $con->query($sql);
+$result = $conn->query($sql);
 
 echo "<select name='firstName'>";
 while ($row = $result)
