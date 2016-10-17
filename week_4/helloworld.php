@@ -10,7 +10,7 @@
 <a href="hellofrom.php?planet=Mars"<a>Mars</a>
 <a href="hellofrom.php?planet=Uranus"<a>Uranus</a>
 
-<a href="index.php"<a>index</a>
+<a href="http://myfirstwebapp123.azurewebsites.net/index.php"<a>index</a>
 </body>
 
 

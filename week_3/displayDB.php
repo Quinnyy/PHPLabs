@@ -18,6 +18,6 @@ include('dbConnect.php');
 ?>
 
 
-<a href="index.php"<a>index</a>
+<a href="http://myfirstwebapp123.azurewebsites.net/index.php"<a>index</a>
 </body>
 </html>
