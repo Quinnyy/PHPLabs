@@ -24,9 +24,9 @@ $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
-$result = $conn->query($heroID);
+//$result = $conn->query($heroID);
 
-$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result->fetch_assoc()', '$villain')";
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$heroID', '$villain')";
 
 
 if ($conn->query($sql) === TRUE) {
