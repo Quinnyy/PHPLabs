@@ -1,7 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert Battle to DB</title>
+</head>
+<body >
+<a href="managebattles.html"<a>Back!</a>
+
+</body>
+</html>
+
 <?php
-/**
- * Created by PhpStorm.
- * User: 1505993
- * Date: 17/10/2016
- * Time: 17:57
- */
+
+
+$conn = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e15cdf","acsm_253596416cc65a9");
+
+if (mysqli_connect_errno()){
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}else{
+    echo "working\r";
+}
+
+$villain = $_POST["villain"];
+$superhero = $_POST["firstName"];
+
+$heroID = "SELECT superheroID WHERE firstName = '$superhero'";
+
+
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$heroID', '$villain')";
+//$result = $conn->query($sql);
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+}
+else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+?>

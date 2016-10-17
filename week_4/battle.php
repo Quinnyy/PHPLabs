@@ -8,12 +8,6 @@
 <form action="insertbattle.php" method="post">
     <label>Villain Fought:</label><input type="text" name="villain">
 
-
-
-
-
-
-
 <?php
 
 $conn = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e15cdf","acsm_253596416cc65a9");
