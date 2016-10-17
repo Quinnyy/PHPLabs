@@ -8,8 +8,8 @@
 <h2>This web page will display links to my different lab work</h2>
 
 
-<a src="/week3/displauyDB.php"<a>marval DB lab</a>
-<a src="/week4/helloworld.php""<a>hello world lab</a>
+<a src="http://labwebsiteworkout.azurewebsites.net/displauyDB.php"<a>marval DB lab</a>
+<a href="http://labwebsiteworkout.azurewebsites.net/helloworld.php"<a>hello world lab</a>
 
 
 </body>
