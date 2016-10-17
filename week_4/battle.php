@@ -5,6 +5,17 @@
     <title>Insert Battle</title>
 </head>
 <body>
+<form action="insertbattle.php" method="post">
+    <label>Villain Fought:</label><input type="text" name="villain">
+    <input type="submit" value="Submit">
+</form>
+
+
+<a href="managebattles.html"<a>Back!</a>
+
+
+</body>
+</html>
 
 <?php
 
@@ -23,14 +34,3 @@ echo "</select>";
 ?>
 
 
-<form action="insertbattle.php" method="post">
-    <label>Villain Fought:</label><input type="text" name="villain">
-    <input type="submit" value="Submit">
-</form>
-
-
-<a href="managebattles.html"<a>Back!</a>
-
-
-</body>
-</html>
