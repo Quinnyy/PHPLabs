@@ -24,10 +24,10 @@ $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
 $heroID = "SELECT superheroID WHERE firstName = '$superhero'";
+$result = $conn->query($heroID);
 
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
 
-$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$resultID = $conn->query($heroID', '$villain')";
-$result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
