@@ -21,18 +21,18 @@ if (mysqli_connect_errno()){
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }else{
     echo "working\r";
-
-    $sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ($forename, $surname, $power)";
-    $result = $conn->query($sql);
-
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-        }
- else {
-     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+$sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ('$forename', '$surname', '$power')";
+$result = $conn->query($sql);
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
 }
+else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
 
 $conn->close();
 
