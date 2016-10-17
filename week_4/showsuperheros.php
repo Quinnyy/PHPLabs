@@ -16,7 +16,7 @@ $con = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e1
 if (mysqli_connect_errno()){
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }else{
-    echo "working\r";
+    echo "working!</br>";
 }
 
 $sql = "SELECT * FROM superheros ";
@@ -25,7 +25,7 @@ $result = $con->query($sql);
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-        echo "First Name: " . $row["fistName"]. "\r" . "Last Name: " . $row["lastName"]. "/r" . "Super Power: " . $row["mainSuperpower"] . ",";
+        echo "Index : " . $row["superheroID"] . "\r" . "First Name: " . $row["firstName"]. "\r" . "Last Name: " . $row["lastName"]. "\r" . "Super Power: " . $row["mainSuperpower"] . ",";
         echo "</br>";
     }
 
