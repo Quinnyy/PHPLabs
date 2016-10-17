@@ -32,6 +32,9 @@
     <li>
         <a href="/week_4/manageSuperheros.html"<a>Superhero Management</a>
     </li>
+    <li>
+        <a href="/week_4/managebattles.html"<a>Battle Management</a>
+    </li>
 </ul>
 
 </body>
