@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="insertsuperhero.php" method="post">
+<form action="insertbattle.php" method="post">
     <label>Superheros:</label><select></select type="text" name="superhero">
     <label>Villain Fought:</label><input type="text" name="villain">
     <input type="submit" value="Submit">
