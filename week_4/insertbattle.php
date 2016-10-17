@@ -26,7 +26,7 @@ echo "WTFFFF";
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
 $result = $conn->query($heroID);
 echo "WTFFFF";
-$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('1', '$villain')";
 echo "WTFFFF";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
