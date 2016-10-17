@@ -18,7 +18,7 @@ echo "Hello from " . $query;
 
 <body>
 
-<a href="week_4/helloworld.php"<a>Back!</a>
+<a href="helloworld.php"<a>Back!</a>
 
 </body>
 
