@@ -10,9 +10,10 @@
 <h3>Week 3</h3>
 <a href="/week_3/displayDB.php"<a>Display from DB</a>
 <h3>Week 4</h3>
+<li>
 <a href="/week_4/helloworld.php"<a>Get method</a>
 <a href="/week_4/set_Superhero.php"<a>Set method</a>
-
+</li>
 
 </body>
 </html>
