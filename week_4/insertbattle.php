@@ -21,12 +21,12 @@ if (mysqli_connect_errno()){
 }
 
 $villain = $_POST["villain"];
-$superhero = $_POST['firstName'];
+$superhero = $_POST["firstName"];
 
 $heroID = "SELECT superheroID WHERE firstName = '$superhero'";
-$resultID = $conn->query($heroID);
 
-$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$heroID', '$villain')";
+
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$resultID = $conn->query($heroID', '$villain')";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
