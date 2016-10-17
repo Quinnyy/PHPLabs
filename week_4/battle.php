@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 echo "<select name='firstName'>";
 while ($row = $result->fetch_assoc())
 {
-    echo "<option value='" . $row['firstName'] . "'>'" . $row['firstName'] . "</option>";
+    echo "<option value=" . $row['firstName'] . "'>'" . $row['firstName'] . "</option>";
 }
 echo "</select>";
 
