@@ -23,13 +23,13 @@ if (mysqli_connect_errno()){
     echo "working\r";
 
     $sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ($forename, $surname, $power)";
-    $result = $con->query($sql);
+    $result = $conn->query($sql);
 
     if ($conn->query($sql) === TRUE) {
-           echo "New record created successfully";
+        echo "New record created successfully";
         }
  else {
-           echo "Error: " . $sql . "<br>" . $conn->error;
+     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 }
