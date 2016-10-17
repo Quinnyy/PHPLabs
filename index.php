@@ -8,9 +8,9 @@
 <h2>This web page will display links to my different lab work</h2>
 
 <h3>Week 2</h3>
-<a href="PHPLabs/week3/displauyDB.php"<a>marval DB lab</a>
+<a href="week3/displauyDB.php"<a>marval DB lab</a>
 <h3>Week 4</h3>
-<a href="PHPLabs/week4/helloworld.php"<a>hello world lab</a>
+<a href="week4/helloworld.php"<a>hello world lab</a>
 
 
 </body>
