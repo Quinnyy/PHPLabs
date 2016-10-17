@@ -24,7 +24,7 @@ $conn = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e
 $sql = "SELECT firstName FROM superheros";
 $result = $con->query($sql);
 
-echo "<select name='name'>";
+echo "<select name='firstName'>";
 while ($row = $result)
 {
     echo "<option value='" . $row['firstName'] . "'>'" . $row['firstName'] . "</option>";
