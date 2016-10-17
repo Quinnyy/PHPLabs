@@ -1,12 +1,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>Set Superhero</title>
 </head>
 <body >
 
 <h2>Create Superhero!</h2>
 
+<form action="formResponse.php" method="post">
+    <label>Forename:</label><input type="text" name="=forename">
+    <label>Surname:</label><input type="text" name="=surname">
+    <label>Super Power:</label><input type="text" name="=power">
+</form>
 
 <?php
 
