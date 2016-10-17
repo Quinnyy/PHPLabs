@@ -6,9 +6,9 @@
 <body>
 <h2>Which planet would you like to say hello from?</h2>
 
-<a href="http://labwebsiteworkout.azurewebsites.net/hellofrom.php?planet=Earth"<a>Earth</a>
-<a href="http://labwebsiteworkout.azurewebsites.net/hellofrom.php?planet=Mars"<a>Mars</a>
-<a href="http://labwebsiteworkout.azurewebsites.net/hellofrom.php?planet=Uranus"<a>Uranus</a>
+<a href="week_4/hellofrom.php?planet=Earth"<a>Earth</a>
+<a href="week_4/hellofrom.php?planet=Mars"<a>Mars</a>
+<a href="week_4/hellofrom.php?planet=Uranus"<a>Uranus</a>
 
 </body>
 
