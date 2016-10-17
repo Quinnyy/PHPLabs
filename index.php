@@ -17,7 +17,7 @@
 <h3>Week 3</h3>
 <ul>
     <li>
-        <a href="/week_3/displayDB.php"<a>Display from DB</a>
+        <a href="/week_3/displayDB.php"<a>Movie Title Display</a>
     </li>
 </ul>
 
