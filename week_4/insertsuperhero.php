@@ -4,7 +4,7 @@
     <title>Insert Superhero to DB</title>
 </head>
 <body >
-
+<a href="manageSuperheros.html"<a>Back!</a>
 
 </body>
 </html>
@@ -24,7 +24,7 @@ if (mysqli_connect_errno()){
 }
 
 $sql = "INSERT INTO superheros (firstName, lastName, mainSuperpower) VALUES ('$forename', '$surname', '$power')";
-$result = $conn->query($sql);
+//$result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
