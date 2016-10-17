@@ -6,14 +6,22 @@
 <body>
 <h2>Which planet would you like to say hello from?</h2>
 
-<a href="hellofrom.php?planet=Earth"<a>Earth</a>
-<a href="hellofrom.php?planet=Mars"<a>Mars</a>
-<a href="hellofrom.php?planet=Uranus"<a>Uranus</a>
+<ul>
+    <li>
+        <a href="hellofrom.php?planet=Earth"<a>Earth</a>
+    </li>
+    <li>
+        <a href="hellofrom.php?planet=Mars"<a>Mars</a>
+    </li>
+    <li>
+        <a href="hellofrom.php?planet=Uranus"<a>Uranus</a>
+    </li>
+    <li>
+        <a href="http://myfirstwebapp123.azurewebsites.net/index.php"<a>index</a>
+    </li>
+</ul>
 
-<a href="http://myfirstwebapp123.azurewebsites.net/index.php"<a>index</a>
 </body>
-
-
 
 <?php
 ini_set('display_errors', 1);
