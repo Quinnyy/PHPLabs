@@ -18,7 +18,7 @@ echo "Hello from " . $query;
 
 <body>
 
-<a href="http://labwebsiteworkout.azurewebsites.net/helloworld.php"<a>Back!</a>
+<a href="http://labwebsiteworkout.azurewebsites.net/week_4/helloworld.php"<a>Back!</a>
 
 </body>
 
