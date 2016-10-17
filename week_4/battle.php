@@ -13,7 +13,7 @@
 </form>
 
 
-<a href="manageSuperheros.html"<a>Back!</a>
+<a href="managebattles.html"<a>Back!</a>
 
 
 </body>
