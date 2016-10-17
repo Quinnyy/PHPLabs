@@ -7,15 +7,12 @@
 <body>
 <form action="insertbattle.php" method="post">
     <label>Villain Fought:</label><input type="text" name="villain">
-    <input type="submit" value="Submit">
-</form>
 
 
-<a href="managebattles.html"<a>Back!</a>
 
 
-</body>
-</html>
+
+
 
 <?php
 
@@ -32,5 +29,9 @@ while ($row = $result->fetch_assoc())
 echo "</select>";
 
 ?>
-
+    <input type="submit" value="Submit">
+</form>
+<a href="managebattles.html"<a>Back!</a>
+</body>
+</html>
 
