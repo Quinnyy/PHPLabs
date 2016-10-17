@@ -25,7 +25,13 @@ $result = $con->query($sql);
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-        echo "Index : " . $row["superheroID"] . "\r" . "First Name: " . $row["firstName"]. "\r" . "Last Name: " . $row["lastName"]. "\r" . "Super Power: " . $row["mainSuperpower"] . ",";
+        echo "Index : " . $row["superheroID"];
+        echo "</br>";
+        echo  "First Name: " . $row["firstName"];
+        echo "</br>";
+        echo "Last Name: " . $row["lastName"];
+        echo "</br>";
+        echo "Super Power: " . $row["mainSuperpower"];
         echo "</br>";
     }
 
