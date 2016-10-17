@@ -11,6 +11,7 @@
     <label>Forename:</label><input type="text" name="=forename">
     <label>Surname:</label><input type="text" name="=surname">
     <label>Super Power:</label><input type="text" name="=power">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
