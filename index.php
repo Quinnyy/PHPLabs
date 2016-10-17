@@ -29,6 +29,9 @@
     <li>
         <a href="/week_4/set_Superhero.php"<a>Set method</a>
     </li>
+    <li>
+        <a href="/week_4/manageSuperheros.html"<a>Superhero Management</a>
+    </li>
 </ul>
 
 </body>
