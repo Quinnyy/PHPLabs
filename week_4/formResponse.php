@@ -15,7 +15,7 @@ $forename = $_POST["forename"];
 $surname = $_POST["surname"];
 $power = $_POST["power"];
 
-echo "Name: " . $forename . " " . $surname . "Super Power: " . " " . $power;
+echo "Name: " . $forename . " " . $surname . " Super Power: " . " " . $power;
 
 ?>
 
