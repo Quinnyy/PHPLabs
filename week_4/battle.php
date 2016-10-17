@@ -22,10 +22,10 @@
 $conn = mysqli_connect("eu-cdbr-azure-west-a.cloudapp.net","ba5b868e496ad8","c2e15cdf","acsm_253596416cc65a9");
 
 $sql = "SELECT firstName FROM superheros";
-$result = myQuery($sql);
+$result = $con->query($sql);
 
 echo "<select name='name'>";
-while ($row = mySQL_array($result))
+while ($row = $result)
 {
     echo "<option value='" . $row['firstName'] . "'>'" . $row['firstName'] . "</option>";
 }
