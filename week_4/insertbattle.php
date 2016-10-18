@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
         }
 else
     {
-        echo "NULL"l
+        echo "NULL";
     }
 }
 $conn->close();
