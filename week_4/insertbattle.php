@@ -28,7 +28,6 @@ $result = $conn->query($heroID);
 
 if ($result->num_rows > 0) {
 
-    while ($row = $result->fetch_assoc()) {
         $sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -36,8 +35,10 @@ if ($result->num_rows > 0) {
             echo "not working...";
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+else
+    {
+        echo "NULL"l
     }
-
 }
 $conn->close();
 
