@@ -26,7 +26,7 @@ $superhero = $_POST["firstName"];
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = 'Michael'";
 $result = $conn->query($heroID);
 
-if ($conn->query($heroID) === TRUE) {
+if ($conn->query($result) === TRUE) {
         echo "New record created successfully";
     } else {
     echo "not working...";
