@@ -23,10 +23,10 @@ if (mysqli_connect_errno()){
 $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
-$heroID = "SELECT superheroID FROM superheros WHERE firstName = 'Michael'";
+$heroID = "SELECT 'superheroID' FROM superheros WHERE 'firstName' = 'Michael'";
 $result = $conn->query($heroID);
 
-if ($conn->query($result) === TRUE) {
+if ($conn->query($heroID) === TRUE) {
         echo "New record created successfully";
     } else {
     echo "not working...";
