@@ -30,7 +30,7 @@ if ($conn->query($heroID) === TRUE) {
         echo "New record created successfully";
     } else {
     echo "not working...";
-    echo "Error: " . $heroID . "<br>" . $conn->error;
+    echo "Error: " . $result . "<br>" . $conn->error;
 }
 
 
