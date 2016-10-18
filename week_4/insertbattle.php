@@ -23,7 +23,7 @@ if (mysqli_connect_errno()){
 $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
-$heroID = "SELECT superheroID FROM superheros WHERE firstName = 'Michael'";
+$heroID = "SELECT 'superheroID' FROM 'superheros' WHERE 'firstName' = '$superhero'";
 $result = $conn->query($heroID);
 
 echo $conn->query($heroID);
