@@ -23,11 +23,10 @@ if (mysqli_connect_errno()){
 $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
-echo $superhero;
-
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
 $result = $conn->query($heroID);
 
+echo $heroID;
 
 $sql = "INSERT INTO battles (superheroID, villanFought) VALUES ($result, '$villain')";
 
