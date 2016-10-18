@@ -26,7 +26,7 @@ $superhero = $_POST["firstName"];
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
 $result = $conn->query($heroID);
 
-echo $result;
+echo $conn->query($heroID);
 
 $sql = "INSERT INTO battles (superheroID, villanFought) VALUES ($result, '$villain')";
 
