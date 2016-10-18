@@ -26,20 +26,21 @@ $superhero = $_POST["firstName"];
 $heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
 $result = $conn->query($heroID);
 
-if ($result->num_rows > 0) {
+if ($conn->query($heroID) === TRUE) {
+        echo "New record created successfully";
+    } else {
+    echo "not working...";
+    echo "Error: " . $heroID . "<br>" . $conn->error;
+}
 
-    $sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
+
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
+
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
     } else {
         echo "not working...";
         echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-}
-else
-    {
-        echo "NULL";
-
 }
 $conn->close();
 
