@@ -28,7 +28,7 @@ $result = $conn->query($heroID);
 
 $row = $result->fetch_assoc();
 
-$sql = "INSERT INTO battles (superheroID, villanFought) VALUES (".$result.", ".$villain.")";
+$sql = "INSERT INTO battles (superheroID, villanFought) VALUES (".$row['superheroID'].", '.$villain.')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
