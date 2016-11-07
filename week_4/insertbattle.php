@@ -23,16 +23,10 @@ if (mysqli_connect_errno()){
 $villain = $_POST["villain"];
 $superhero = $_POST["firstName"];
 
-$heroID = "SELECT 'superheroID' FROM superheros WHERE 'firstName' = 'Michael'";
+$heroID = "SELECT superheroID FROM superheros WHERE firstName = '$superhero'";
 $result = $conn->query($heroID);
 
-if ($conn->query($heroID) === TRUE) {
-        echo "New record created successfully";
-    } else {
-    echo "not working...";
-    echo "Error: " . $result . "<br>" . $conn->error;
-}
-
+echo $result;
 
 $sql = "INSERT INTO battles (superheroID, villanFought) VALUES ('$result', '$villain')";
 
